@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - MyResume Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --accent-color: #0563bb;
+      --modern-ink: #172033;
+      --modern-muted: #657083;
+      --modern-soft: #f4f8fc;
+      --modern-card: #ffffff;
+      --modern-line: rgba(5, 99, 187, 0.14);
+      --modern-shadow: 0 18px 45px rgba(23, 32, 51, 0.09);
+      --modern-radius: 18px;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(5, 99, 187, 0.08), transparent 34rem),
+        linear-gradient(180deg, #ffffff 0%, #f7fbff 45%, #ffffff 100%);
+      color: var(--modern-ink);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .section {
+      padding: 92px 0;
+    }
+
+    .section-title {
+      max-width: 760px;
+      padding-bottom: 42px;
+    }
+
+    .section-title h2 {
+      color: var(--modern-ink);
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      letter-spacing: 0;
+      margin-bottom: 14px;
+    }
+
+    .section-title h2:before {
+      background: var(--modern-line);
+    }
+
+    .section-title p,
+    .about .content p,
+    .resume .resume-item p,
+    .services .service-item p,
+    .contact .info-item p {
+      color: var(--modern-muted);
+    }
+
+    .header {
+      left: 24px;
+      min-width: 72px;
+      padding: 0;
+    }
+
+    .navmenu ul {
+      width: auto;
+      padding: 14px;
+      background: rgba(255, 255, 255, 0.86);
+      border: 1px solid rgba(5, 99, 187, 0.12);
+      border-radius: 999px;
+      box-shadow: 0 20px 50px rgba(23, 32, 51, 0.12);
+      backdrop-filter: blur(14px);
+    }
+
+    .navmenu a,
+    .navmenu a:focus {
+      background: transparent;
+      height: 48px;
+      max-width: 48px;
+      color: var(--modern-muted);
+      margin-bottom: 6px;
+      padding: 10px 14px;
+    }
+
+    .navmenu a:hover,
+    .navmenu li:hover>a,
+    .navmenu .active,
+    .navmenu .active:focus {
+      background: var(--accent-color);
+      box-shadow: 0 12px 28px rgba(5, 99, 187, 0.24);
+      color: #fff;
+    }
+
+    .header .header-toggle,
+    .scroll-top {
+      box-shadow: 0 14px 34px rgba(5, 99, 187, 0.28);
+    }
+
+    .hero {
+      min-height: 92vh;
+      padding: 120px 0 96px;
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .hero img {
+      filter: saturate(1.04) contrast(1.02);
+      transform: scale(1.02);
+    }
+
+    .hero:before {
+      background:
+        linear-gradient(90deg, rgba(255,255,255,0.96) 0%, rgba(255,255,255,0.78) 48%, rgba(255,255,255,0.34) 100%),
+        linear-gradient(180deg, rgba(255,255,255,0.12), rgba(5,99,187,0.12));
+    }
+
+    .hero .container {
+      max-width: 1160px;
+    }
+
+    .hero h2 {
+      color: var(--modern-ink);
+      font-size: clamp(2.8rem, 7vw, 5.7rem);
+      line-height: 0.98;
+      letter-spacing: 0;
+      max-width: 900px;
+      text-wrap: balance;
+    }
+
+    .hero p {
+      color: var(--modern-ink);
+      font-size: clamp(1.1rem, 2vw, 1.45rem);
+      margin-top: 18px;
+      max-width: 680px;
+    }
+
+    .hero p span {
+      border-bottom-width: 3px;
+    }
+
+    .hero-intro {
+      color: var(--modern-muted) !important;
+      font-size: 1.05rem !important;
+      line-height: 1.8;
+      margin-top: 18px !important;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .btn-modern {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border-radius: 999px;
+      padding: 13px 22px;
+      font-weight: 700;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+    }
+
+    .btn-modern.primary {
+      background: var(--accent-color);
+      color: #fff;
+      box-shadow: 0 16px 34px rgba(5, 99, 187, 0.25);
+    }
+
+    .btn-modern.secondary {
+      background: rgba(255,255,255,0.86);
+      color: var(--modern-ink);
+      border: 1px solid var(--modern-line);
+    }
+
+    .btn-modern:hover {
+      transform: translateY(-2px);
+    }
+
+    .hero .social-links a,
+    .footer .social-links a {
+      align-items: center;
+      background: #fff;
+      border: 1px solid var(--modern-line);
+      border-radius: 50%;
+      box-shadow: 0 10px 28px rgba(23, 32, 51, 0.08);
+      color: var(--accent-color);
+      display: inline-flex;
+      height: 42px;
+      justify-content: center;
+      margin-right: 10px;
+      width: 42px;
+    }
+
+    .about .row,
+    .resume .row,
+    .contact .row {
+      align-items: stretch;
+    }
+
+    .about .img-fluid {
+      border-radius: var(--modern-radius);
+      box-shadow: var(--modern-shadow);
+      min-height: 100%;
+      object-fit: cover;
+    }
+
+    .about .content,
+    .resume .col-lg-6,
+    .contact .info-item,
+    .contact .php-email-form {
+      background: rgba(255,255,255,0.9);
+      border: 1px solid var(--modern-line);
+      border-radius: var(--modern-radius);
+      box-shadow: 0 12px 34px rgba(23, 32, 51, 0.06);
+    }
+
+    .about .content {
+      padding: 32px;
+    }
+
+    .about .content ul li {
+      background: var(--modern-soft);
+      border-radius: 12px;
+      margin-bottom: 12px;
+      padding: 12px 14px;
+    }
+
+    .resume .col-lg-6 {
+      padding: 28px;
+    }
+
+    .resume .resume-title {
+      color: var(--modern-ink);
+      font-size: 1.3rem;
+    }
+
+    .resume .resume-item {
+      border-left-color: rgba(5, 99, 187, 0.28);
+      padding-left: 24px;
+    }
+
+    .resume .resume-item h4 {
+      color: var(--modern-ink);
+      line-height: 1.4;
+    }
+
+    .resume .resume-item h5 {
+      background: rgba(5, 99, 187, 0.09);
+      border-radius: 999px;
+      color: var(--accent-color);
+    }
+
+    .portfolio .portfolio-filters {
+      background: rgba(255,255,255,0.82);
+      border: 1px solid var(--modern-line);
+      border-radius: 999px;
+      box-shadow: 0 12px 30px rgba(23, 32, 51, 0.06);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin-bottom: 34px;
+      padding: 8px;
+      width: fit-content;
+    }
+
+    .portfolio .portfolio-filters li {
+      margin: 0;
+      padding: 10px 18px;
+    }
+
+    .portfolio .portfolio-item {
+      border-radius: var(--modern-radius);
+      box-shadow: 0 14px 32px rgba(23, 32, 51, 0.08);
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .portfolio .portfolio-item:hover {
+      box-shadow: var(--modern-shadow);
+      transform: translateY(-5px);
+    }
+
+    .portfolio .portfolio-item img {
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      transition: transform 0.45s ease;
+      width: 100%;
+    }
+
+    .portfolio .portfolio-item:hover img {
+      transform: scale(1.045);
+    }
+
+    .portfolio .portfolio-item .portfolio-info {
+      background: linear-gradient(180deg, rgba(255,255,255,0.94), #fff);
+      border-top: 1px solid var(--modern-line);
+      bottom: 0;
+      left: 0;
+      opacity: 1;
+      padding: 16px 58px 16px 18px;
+      right: 0;
+      transform: translateY(calc(100% - 58px));
+    }
+
+    .portfolio .portfolio-item:hover .portfolio-info {
+      transform: translateY(0);
+    }
+
+    .portfolio .portfolio-item .portfolio-info h4 {
+      color: var(--modern-ink);
+      font-size: 1rem;
+      line-height: 1.35;
+      margin: 0;
+      padding-right: 0;
+    }
+
+    .portfolio .portfolio-item .portfolio-info .preview-link {
+      align-items: center;
+      background: var(--accent-color);
+      border-radius: 50%;
+      color: #fff;
+      display: flex;
+      height: 38px;
+      justify-content: center;
+      right: 14px;
+      top: 14px;
+      width: 38px;
+    }
+
+    .services .service-item {
+      border: 1px solid var(--modern-line);
+      border-radius: var(--modern-radius);
+      box-shadow: 0 12px 34px rgba(23, 32, 51, 0.06);
+      padding: 38px 28px;
+      transform: translateY(0);
+    }
+
+    .services .service-item:hover {
+      box-shadow: var(--modern-shadow);
+      transform: translateY(-6px);
+    }
+
+    .contact .info-item {
+      margin-top: 0 !important;
+      padding: 22px;
+    }
+
+    .contact .col-lg-4 {
+      display: grid;
+      gap: 18px;
+    }
+
+    .contact .php-email-form {
+      padding: 28px;
+    }
+
+    .contact .php-email-form input[type=text],
+    .contact .php-email-form input[type=email],
+    .contact .php-email-form textarea {
+      background: var(--modern-soft);
+      border: 1px solid var(--modern-line);
+      border-radius: 14px;
+      min-height: 48px;
+    }
+
+    .contact .php-email-form button[type=submit] {
+      box-shadow: 0 14px 30px rgba(5, 99, 187, 0.22);
+      font-weight: 700;
+      padding: 13px 30px;
+    }
+
+    .footer {
+      background:
+        linear-gradient(135deg, #102033, #0563bb);
+      color: rgba(255,255,255,0.82);
+      padding: 54px 0 34px;
+    }
+
+    .footer h3,
+    .footer .sitename,
+    .footer a {
+      color: #fff;
+    }
+
+    .footer .copyright {
+      border-top-color: rgba(255,255,255,0.16);
+    }
+
+    .footer .social-links a {
+      background: rgba(255,255,255,0.12);
+      border-color: rgba(255,255,255,0.2);
+      color: #fff;
+    }
+
+    @media (min-width: 1200px) {
+      .header~main,
+      .header~footer {
+        margin-left: 0;
+      }
+    }
+
+    @media (max-width: 1199px) {
+      .header {
+        background: rgba(255,255,255,0.96);
+        left: -100%;
+        min-width: 300px;
+        padding: 20px;
+      }
+
+      .header.header-show {
+        left: 0;
+      }
+
+      .navmenu ul {
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        width: 100%;
+      }
+
+      .navmenu a,
+      .navmenu a:focus {
+        max-width: none;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        padding: 70px 0;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 112px 0 72px;
+      }
+
+      .hero:before {
+        background: rgba(255,255,255,0.88);
+      }
+
+      .hero-actions {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .btn-modern {
+        justify-content: center;
+      }
+
+      .about .content,
+      .resume .col-lg-6,
+      .contact .php-email-form {
+        padding: 22px;
+      }
+
+      .portfolio .portfolio-filters {
+        border-radius: 20px;
+        width: 100%;
+      }
+    }
+  </style>
+
+  <!-- =======================================================
+  * Template Name: MyResume
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
+
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background">
+
+      <img src="assets/img/bgj.jpg" alt="">
+
+      <div class="container" data-aos="zoom-out">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <h2>James Anthony N. Piape</h2>
+            <p>I'm <span class="typed" data-typed-items="Student, Sound Operator, Light Operator,">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+            <p class="hero-intro">A computer science student with hands-on experience in sound, lighting, auction hosting, and visual design projects.</p>
+            <div class="hero-actions">
+              <a href="#portfolio" class="btn-modern primary"><i class="bi bi-grid-3x3-gap"></i> View Portfolio</a>
+              <a href="#contact" class="btn-modern secondary"><i class="bi bi-send"></i> Contact Me</a>
+            </div>
+            <div class="social-links">
+             
+              <a href="https://www.facebook.com/jamesanthony.piape"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/jamessfei/"><i class="bi bi-instagram"></i></a>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/memy.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Student &amp; Sound/Light Operator.</h2>
+            <p class="fst-italic py-3">
+              
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>September 16, 2006</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>gmail:</strong> <span>jamespiape517@gmail.com</span></li>
+                  
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>San Isidro, Daet, Camarines Norte</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>19</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>09517641310</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>College Year:</strong> <span>2nd Year</span></li>
+        
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+             
+        
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>My Resume Based on my Experiece.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>James Anthony N. Piape</h4>
+              <p><em>I am a first-year Bachelor of Science in Computer Science student at Mabini Colleges, with 6 years of experience as a sound and light operator and 7 months of experience as an auctioneer.</em></p>
+              <ul>
+                <li>Nano Sounds</li>
+                <li>MMND Auction House </li>
+                </li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>ACADEMIC BACKGROUND</h4>
+              <h5>ELEMENTARY:</h5>
+              <p><em>
+                Zurbano Elementary School SY 2012-2016
+                </em></p>
+                <h5>SECONDARY:</h5>
+                <p><em>
+                  JHS: Moreno Integrated School 2018-2022
+                  </em></p>
+                  <p><em>      
+                  SHS: Moreno Integrated School 2022-2024
+                    </em></p>
+                    <h5>COLLEGE:</h5>
+              <p><em>
+                Mabini Colleges Inc. 2024-Present
+                </em></p>
+              <p></p>
+            </div><!-- Edn Resume Item -->
+
+            
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Work Experience</h3>
+            <div class="resume-item">
+              <h4>Sound&Light Operator</h4>
+              <h5>2017 - Present</h5>
+             
+              
+              <p><em>San Isidro, Daet, Camarines Norte </em></p>
+              <ul>
+                <li>Dj, Light Tech, Sound Tech</li>
+                <li>Events, Fiesta, Birthday, Wedding, and Any Kind of Ocassion </li>
+              
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Auctioneer</h4>
+              <h5>7 months</h5>
+              <p><em>Alawihio MMND Auction House</em></p>
+              <ul>
+                <li>Bidding for Japan items such as glassware, furniture, toys, sofa, bed, tools, etc</li>
+                <li>Every Sunday</li>
+                <li>Viewing 8am-10am</li>
+                <li>Start of Bidding at 10am-3pm</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>The school activities that I did.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">Premid</li>
+            <li data-filter=".filter-product">Midterm</li>
+            <li data-filter=".filter-branding">Prefinal</li>
+            <li data-filter=".filter-last">Final</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/d.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Shapes and Forms</h4>
+                <p></p>
+                <a href="assets/img/masonry-portfolio/d.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/d1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Shapes and Forms</h4>
+                <p></p>
+                <a href="assets/img/masonry-portfolio/d1.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/d2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Constucting Basic and Forms, Division & Multiplication</h4>
+                <p></p>
+                <a href="assets/img/masonry-portfolio/d2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/g.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Working With Vanishing Points</h4>
+                <p></p>
+                <a href="assets/img/masonry-portfolio/g.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/j.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Working With Vanishing Points</h4>
+                <p></p>
+                <a href="assets/img/masonry-portfolio/j.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    </div>
+            </div><!-- End Portfolio Item -->
+
+ <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/m.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Working With Vanishing Points</h4>
+                <p></p>
+                <a href="assets/img/masonry-portfolio/m.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                 </div>
+            </div><!-- End Portfolio Item -->
+
+            
+             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/l.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Constucting Basic and Forms, Division & Multiplication</h4>
+                <p></p>
+                <a href="assets/img/masonry-portfolio/l.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+            </div><!-- End Portfolio Item -->
+
+             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/p.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Constucting Basic and Forms, Division & Multiplication</h4>
+                <p></p>
+                <a href="assets/img/masonry-portfolio/p.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+            </div><!-- End Portfolio Item -->
+
+
+            
+    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/d3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>(CAR)Constucting Basic and Forms, Division & Multiplication</h4>
+                <p></p>
+                <a href="assets/img/masonry-portfolio/d3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                 </div>
+            </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/d4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>(CAR)Constucting Basic and Forms, Division & Multiplication</h4>
+                <p></p>
+                <a href="assets/img/masonry-portfolio/d4.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            
+
+ <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/d5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Modern House Drawing</h4>
+                <p></p>
+                <a href="assets/img/masonry-portfolio/d5.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+            </div><!-- End Portfolio Item -->
+
+  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4> Digital Drawing</h4>
+                <p></p>
+                <a href="assets/img/masonry-portfolio/1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+            </div><!-- End Portfolio Item -->
+
+
+  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Digital Drawing</h4>
+                <p></p>
+                <a href="assets/img/masonry-portfolio/2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+            </div><!-- End Portfolio Item -->
+
+
+
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Digital Drawing</h4>
+                <p></p>
+                <a href="assets/img/masonry-portfolio/3.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+            </div><!-- End Portfolio Item -->
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/modernhouse1 pic.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>(Activity 106) Modern House </h4>
+                <p></p>
+                <a href="assets/img/masonry-portfolio/modernhouse1 pic.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+            </div><!-- End Portfolio Item -->
+
+
+               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/z.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>3D Town Project</h4>
+                <p></p>
+                <a href="assets/img/masonry-portfolio/z.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+            </div><!-- End Portfolio Item -->
+
+                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/x.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>3D Town Project</h4>
+                <p></p>
+                <a href="assets/img/masonry-portfolio/x.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+            </div><!-- End Portfolio Item -->
+
+                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/c.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>3D Town Project</h4>
+                <p></p>
+                <a href="assets/img/masonry-portfolio/c.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+            </div><!-- End Portfolio Item -->
+
+                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/v.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>3D Town Project</h4>
+                <p></p>
+                <a href="assets/img/masonry-portfolio/v.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+            </div><!-- End Portfolio Item -->
+
+       
+                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/b.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>3D Town Project</h4>
+                <p></p>
+                <a href="assets/img/masonry-portfolio/b.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+            </div><!-- End Portfolio Item -->
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Future Services</h2>
+        <p> this services is my dream work that i wanted to achieve.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-cyan position-relative">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                </svg>
+                <i class="bi bi-activity"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Music Producer </h3>
+              </a>
+              <p> I want to create music because I want to be recognized in the music industry and to help other people like concert for a cause.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-orange position-relative">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+                </svg>
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Sound System</h3>
+              </a>
+              <p>Setting up sound systems for different venues, such as homes, offices, event spaces, or live concerts</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+                </svg>
+                <i class="bi bi-easel"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Graphic Designer</h3>
+              </a>
+              <p>I like to work in a wide range of industries, such as advertising, branding, web design, publishing, and marketing.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+    </section><!-- /Services Section -->
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+          <div class="swiper-pagination"></div>
+      
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>If Incase You Need Me Here's My Information</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>San Isidro, Daet Camarines Norte</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Contact</h3>
+                <p>0951764310</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>jamespiape517@.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">James Anthony N. Piape</h3>
+      <p></p>
+      <div class="social-links d-flex justify-content-center">
+        
+        <a href="https://www.facebook.com/jamesanthony.piape"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/jamessfei/"><i class="bi bi-instagram"></i></a>
+       
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Alex Smith</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distribuited by <a href="https://themewagon.com">ThemeWagon</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
